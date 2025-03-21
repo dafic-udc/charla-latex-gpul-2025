@@ -1,0 +1,35 @@
+\documentclass{beamer}
+
+\title[Introducción a LaTeX]{\LaTeX: Cómo escribir TeXtos bonitos con \textbackslash emph\{comandos feos\}}
+
+\subtitle{Introducción a LaTeX \\ (eso que necesitas para el TFG que aún no sabes) :3}
+
+\author[Feito, Herrador \& Lúa]{Daniel Feito, Hugo Herrador \& Lúa Rico}
+\institute{DAFIC $\times$ GPUL}
+\date[GPUL School 2025]{Marzo de 2025}
+
+\usetheme{Madrid}
+\usecolortheme[RGB={50,110,118}]{structure}
+\setbeamertemplate{navigation symbols}{}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Índice}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\input{content/documentos}
+\input{content/básico}
+\input{content/listas}
+\input{content/imágenes}
+\input{content/código}
+\input{content/enlaces}
+
+\end{document}

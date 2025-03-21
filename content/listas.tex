@@ -1,0 +1,136 @@
+\section{Listas}
+
+\begin{frame}[fragile]
+\frametitle{Listas: Tipos y formato}
+
+Tipos de listas:
+\begin{itemize}
+ \item Listas ordenadas $\rightarrow$ \verb|enumerate|
+ \item Listas no ordenadas $\rightarrow$ \verb|itemize|
+ \item Listas de descripciones $\rightarrow$ \verb|description|
+\end{itemize}
+
+\vspace{0.5cm}
+
+Cada elemento se separa con \verb|\item| .
+
+\vspace{0.5cm}
+
+Las listas pueden anidarse (aparecer una dentro de otra), incluso entre tipos distintos.
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Listas: Ejemplo de lista ordenada}
+\begin{columns}
+\column{0.45\textwidth}
+
+    \begin{enumerate}
+    \item Item A
+    \item Item B
+        \begin{enumerate}
+            \item Item B.1
+            \item Item B.2
+        \end{enumerate}
+    \item Item C
+    \item Item D
+    \end{enumerate}
+
+\column{0.45\textwidth}
+\begin{semiverbatim}
+\\begin\{enumerate\}
+    \\item Item A
+    \\item Item B
+        \\begin\{enumerate\}
+            \\item Item B.1
+            \\item Item B.2
+        \\end\{enumerate\}
+    \\item Item C
+    \\item Item D
+\\end\{enumerate\}
+\end{semiverbatim}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Listas: Ejemplo de lista no ordenada}
+\begin{columns}
+\column{0.45\textwidth}
+
+    \begin{itemize}
+    \item Item A
+    \item Item B
+        \begin{itemize}
+            \item Item B.1
+            \item Item B.2
+        \end{itemize}
+    \item Item C
+    \item Item D
+    \end{itemize}
+
+\column{0.45\textwidth}
+\begin{semiverbatim}
+\\begin\{itemize\}
+    \\item Item A
+    \\item Item B
+        \\begin\{itemize\}
+            \\item Item B.1
+            \\item Item B.2
+        \\end\{itemize\}
+    \\item Item C
+    \\item Item D
+\\end\{itemize\}
+\end{semiverbatim}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Listas: Ejemplo de lista de descripciones}
+\begin{description}
+   \item[Término A] Descripción súper ingeniosa aquí.
+   \item[Término B] Otra descripción creativa aquí.
+\end{description}
+
+\vspace{0.5cm}
+
+\begin{semiverbatim}
+\\begin\{description\}
+   \\item[Término A] Descripción súper ingeniosa aquí.
+   \\item[Término B] Otra descripción creativa aquí.
+\\end\{description\}
+\end{semiverbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Listas: Estilos}
+Estilos de las listas:
+\begin{itemize}
+    \item Las listas ordenadas por defecto aparecen con números.
+    \item Las listas no ordenadas por defecto aparecen con puntos.
+    \item El estilo de las listas anidadas puede cambiar en cada nivel de profundidad.
+    \item El decorador de cada \verb|\item| puede personalizarse indicándolo entre corchetes:
+\end{itemize}
+
+\begin{columns}
+\column{0.4\textwidth}
+
+\begin{itemize}
+    \item[-] Ejemplo con \texttt{[-]}.
+    \item[!] Ejemplo con \texttt{[!]}.
+    \item[XD] Ejemplo con \texttt{[XD]}.
+    \item[] Ejemplo con \texttt{[]}.
+\end{itemize}
+
+\column{0.65\textwidth}
+\begin{semiverbatim}
+\\begin\{itemize\}
+    \\item[-] Ejemplo con \\texttt{[-]}.
+    \\item[!] Ejemplo con \\texttt{[!]}.
+    \\item[XD] Ejemplo con \\texttt{[XD]}.
+    \\item[] Ejemplo con \\texttt{[]}.
+\\end\{itemize\}
+\end{semiverbatim}
+\end{columns}
+
+\end{frame}
