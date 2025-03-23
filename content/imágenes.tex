@@ -1,8 +1,9 @@
 \section{Imágenes}
 
 \begin{frame}[fragile]{Imágenes: \texttt{includegraphics}}
+\label{frame:imagenes}
 
-\verb|\includegraphics| permite insertar una imagen mediante su ruta realtiva al fichero \texttt{.tex} principal. 
+\verb|\includegraphics{}| permite insertar una imagen mediante su ruta realtiva al fichero \texttt{.tex} principal. 
 
 \vspace{0.5cm}
 
@@ -21,16 +22,16 @@ También permite establecer su tamaño y rotación. Sin embargo, es muy limitado
 El entorno \texttt{figure} sirve para mostrar las imágenes como elementos flotantes, facilita controlar sus posiciones y permite opciones adicionales.
 
 \begin{figure}[h]
+\label{img:logo_gpul}
 \includegraphics[width=0.3\textwidth]{images/logo_gpul.png}
 \caption{El chulísimo logo del GPUL.}
-\label{img:logo_gpul}
 \end{figure}
 
 \begin{verbatim}
 \begin{figure}[h]
+\label{img:logo_gpul}
 \includegraphics[width=0.3\textwidth]{images/logo_gpul.png}
 \caption{El chulísimo logo del GPUL.}
-\label{img:logo_gpul}
 \end{figure}
 \end{verbatim}
 

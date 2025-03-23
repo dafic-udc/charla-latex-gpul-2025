@@ -7,31 +7,33 @@
 \begin{frame}[fragile]
 \frametitle{Comandos básicos: portada}
 
+Opción fácil $\rightarrow$ \verb|\maketitle|
 \begin{itemize}
- \item Opción fácil $\rightarrow$ \verb|\maketitle|
- \begin{itemize}
-     \item 
- \end{itemize}
- \item Opción avanzada $\rightarrow$ \verb|\begin{titlepage}|
+     \item \verb|\title{Titulo documento}|
+     \item \verb|\author{Daniel Feito \& Hugo Herrador \& Lúa Rico}|
+     \item \verb|\date{March 2025}|
 \end{itemize}
 
-%  Crear portada (Campos básicos para article)
-% Opción fácil: \maketitle
-% \title{Titulo documento}
-% \author{Lúa Rico}
-% \date{March 2025}
-% Opción avanzada: \begin{titlepage}
+\vspace{0.5cm}
+
+Opción avanzada $\rightarrow$ \verb|\begin{titlepage}|
+
 
 \end{frame}
 
 % Section, subsection
 \begin{frame}[fragile]
-\frametitle{Comandos básicos: secciones}
+\frametitle{Comandos básicos: secciones e índice}
+Crear secciones y subsecciones
 \begin{itemize}
     \item \verb|\section{}|
     \item \verb|\subsection{}|
-    \item \verb|\subsubsection{}|
+    \item \verb|\subsubsection{}| 
 \end{itemize}
+
+\vspace{0.5cm}
+
+Crear el índice (se actualiza automáticamente) $\rightarrow$ \verb|\tableofcontents|
 
 \end{frame}
 
@@ -39,8 +41,11 @@
 
 \begin{frame}[fragile]
 \frametitle{Comandos básicos: cargar paquetes}
-Normalmente se hace justo después de definir el tipo de documento.
-\verb|\usepackage{nombre\_paquete}|
+Normalmente se hace justo después de definir el tipo de documento. 
+
+\vspace{0.5cm}
+
+\verb|\usepackage{nombre_paquete}|
 \end{frame}
 
 % Negrita, cursiva, colores en texto
@@ -49,7 +54,7 @@ Normalmente se hace justo después de definir el tipo de documento.
 \begin{itemize}
     \item \textbf{Negrita} $\rightarrow$ \verb|\textbf{Negrita}|
     \item \textit{Cursiva} $\rightarrow$ \verb|\textit{Cursiva}|
-    \item Colores ...
+    \item \textcolor{red}{Colores} $\rightarrow$ \verb|\textcolor{red}{Colores}| (necesario el paquete \verb|\usepackage{xcolor}|)
 \end{itemize}
 
 \end{frame}

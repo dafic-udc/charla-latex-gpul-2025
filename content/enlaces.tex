@@ -1,1 +1,58 @@
 \section{Enlaces}
+
+\begin{frame}[fragile]
+\frametitle{Enlaces: Referencias y el paquete \texttt{hyperref}}
+
+Referenciar secciones y elementos:
+\begin{itemize}
+    \item \verb|\ref{label}| \& \verb|\label{label}|
+\end{itemize}
+
+\vspace{0.5cm}
+
+Paquete \texttt{hyperref}:
+\begin{itemize}
+    \item Personalizable con \verb|\hypersetup{ ... }|
+    \begin{itemize}
+        \item Colorear enlaces $\rightarrow$ \texttt{colorlinks=true}
+        
+        \item Color de enlaces internos $\rightarrow$ \texttt{linkcolor=...}
+        
+        \item Color de enlaces a ficheros locales $\rightarrow$ \texttt{filecolor==...}
+        
+        \item Color de enlaces a sitios web $\rightarrow$ \texttt{urlcolor=...}
+    \end{itemize}
+    \item Ocultar ``cajas'' $\rightarrow$ \verb|\hypersetup{hidelinks}|
+\end{itemize}
+
+\vspace{0.5cm}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Enlaces: Tipos de enlaces}
+
+Hiperenlaces:
+\begin{itemize}
+    \item \verb|\hyperlink{label}{message}| \& \verb|\label{label}|
+    \item \verb|\hyperlink{id}{message1}| \& \verb|\hypertarget{id}{message2}|
+\end{itemize}
+
+\vspace{0.5cm}
+
+Enlaces web:
+\begin{itemize}
+    \item \verb|\href{url}{message}|
+    \item \verb|\url{url}|
+\end{itemize}
+
+\vspace{0.5cm}
+
+Enlaces a ficheros:
+\begin{itemize}
+    \item \verb|\href{run:path}{message}|
+\end{itemize}
+
+
+\end{frame}
+

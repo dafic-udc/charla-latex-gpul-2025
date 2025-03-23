@@ -1,0 +1,75 @@
+\section{Extra}
+% Paquetes útiles
+\begin{frame}[fragile]
+\frametitle{Extra: paquetes útiles}
+% placeins
+% \FloatBarrier
+
+% xcolor
+
+\end{frame}
+
+% Comandos varios útiles
+
+\begin{frame}[fragile]
+\frametitle{Extra: comandos útiles adicionales}
+
+Ocultar el recuadro de los enlaces que aparecen al usar el paquete \verb|hyperref|:
+\begin{itemize}
+    \item \verb|\hypersetup{hidelinks}|
+\end{itemize}
+
+\vspace{0.5cm}
+
+Definir nuestros propios colores:
+\begin{itemize}
+    \item \verb|\definecolor{micolor}{HTML}{ffdf00}|
+    \item Color FIC $\rightarrow$ \verb|\definecolor{FIC}{RGB}{50, 110, 118}|
+\end{itemize}
+
+\vspace{0.5cm} 
+
+Cambiar el color de los títulos de las secciones y subsecciones:
+\begin{itemize}
+    \item \verb|\sectionfont{\color{micolor}}|
+    \item \verb|\subsectionfont{\color{micolor}}|
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Extra: comandos útiles adicionales}
+
+Numerar páginas $\rightarrow$ \verb|\pagenumbering{}|
+\begin{itemize}
+    \item \verb|\pagenumbering{arabic}| $\rightarrow$ 1, 2, 3...
+    \item \verb|\pagenumbering{roman}| $\rightarrow$ i, ii, iii...
+    \item \verb|\pagenumbering{Roman}| $\rightarrow$ I, II, III...
+    \item \verb|\pagenumbering{alph}| $\rightarrow$ a, b, c...
+    \item \verb|\pagenumbering{Alph}| $\rightarrow$ A, B, C...
+\end{itemize}
+
+\vspace{0.5cm}
+
+No numerar la portada ni el índice:
+\begin{itemize}
+    \item Eliminar numeración en la portada $\rightarrow$ \verb|\thispagestyle{empty}|
+    \item Eliminar numeración en cualquier página antes de comenzar la numeración (índice) $\rightarrow$ \verb|\pagenumbering{gobble}|
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Extra: comandos útiles adicionales}
+No numerar las secciones y subsecciones:
+\begin{itemize}
+    \item No se numera ninguna unidad estructural (ni capítulos ni secciones) 
+    
+    \hspace{0.2cm} \verb|\setcounter{secnumdepth}{0}|
+    
+    \item Numerar solo capítulos o secciones 
+    
+    \hspace{0.2cm} \verb|\setcounter{secnumdepth}{1}|
+\end{itemize}
+
+\end{frame}

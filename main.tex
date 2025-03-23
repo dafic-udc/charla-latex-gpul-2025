@@ -1,5 +1,13 @@
 \documentclass{beamer}
+
+% ----- PACKAGES -------
 \usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+%-----------------------
+
+
 \title[Introducción a LaTeX]{\LaTeX: Cómo escribir TeXtos bonitos con \textbackslash emph\{comandos feos\}}
 
 \subtitle{Introducción a LaTeX \\ (eso que necesitas para el TFG que aún no sabes) :3}
@@ -21,16 +29,25 @@
 {
   \begin{frame}
     \frametitle{Índice}
+    \begin{multicols}{2}
     \tableofcontents[currentsection]
+    \end{multicols}
   \end{frame}
 }
 
+\input{content/introducción}
 \input{content/documentos}
 \input{content/básico}
 \input{content/listas}
 \input{content/imágenes}
-\input{content/código}
-\input{content/matematicas}
 \input{content/enlaces}
+\input{content/tablas}
+\input{content/código}
+\input{content/matemáticas}
+\input{content/columnas}
+\input{content/cabeceras}
+\input{content/bibliografía}
+\input{content/extra}
+
 
 \end{document}
