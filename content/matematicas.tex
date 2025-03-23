@@ -1,0 +1,249 @@
+\section{Matemáticas}
+
+\begin{frame}[fragile]
+    Calculemos la siguiente integral definida:
+    \begin{equation}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation}
+    \begin{verbatim}
+    \begin{equation}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation}
+    \end{verbatim}
+    \transparent{0.3}
+    Otra opción: $\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \begin{verbatim}
+        $\int_{- \infty}{+ \infty}{e^{-x^2}dx}$
+    \end{verbatim}
+    Tercera opción: $$\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$$
+    \begin{verbatim}
+        $$\int_{- \infty}{+ \infty}{e^{-x^2}dx}$$
+    \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+    Calculemos la siguiente integral definida:
+    \transparent{0.3}
+    \begin{equation*}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation*}
+    \begin{verbatim}
+    \begin{equation}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation}
+    \end{verbatim}
+    \transparent{1}
+    Otra opción: $\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \begin{verbatim}
+        $\int_{- \infty}{+ \infty}{e^{-x^2}dx}$
+    \end{verbatim}
+    \transparent{0.3}
+    Tercera opción: $$\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$$
+    \begin{verbatim}
+        $$\int_{- \infty}{+ \infty}{e^{-x^2}dx}$$
+    \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+    Calculemos la siguiente integral definida:
+    \transparent{0.3}
+    \begin{equation*}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation*}
+    \begin{verbatim}
+    \begin{equation}
+        \int_{- \infty}^{+ \infty}{e^{-x^2}dx}
+    \end{equation}
+    \end{verbatim}
+    \transparent{0.3}
+    Otra opción: $\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \begin{verbatim}
+        $\int_{- \infty}{+ \infty}{e^{-x^2}dx}$
+    \end{verbatim}
+    \transparent{1}
+    Tercera opción: $$\int_{- \infty}^{+ \infty}{e^{-x^2}dx}$$
+    \begin{verbatim}
+        $$\int_{- \infty}{+ \infty}{e^{-x^2}dx}$$
+    \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{center}
+    Sea $\mathcal{I} = \int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \end{center}
+    \transparent{0}
+    \begin{align*}
+        \mathcal{I}^2 &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2 \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right ) \cdot \left ( \int_{- \infty}^{+ \infty}{e^{-y^2}dy} \right ) \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-(x^2 + y^2)}dx} \right )
+    \end{align*}
+    \begin{center}
+    ¿Qué podemos hacer ahora?
+    \end{center}
+    \begin{center}
+    ¡Un cambio a polares!
+    \end{center}
+    $$
+    \begin{cases}
+        x = r \cdot \cos{\theta} \\
+        y = r \cdot \sin{\theta}
+    \end{cases}
+    $$
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{center}
+    Sea $\mathcal{I} = \int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \end{center}
+    \begin{align*}
+        \mathcal{I}^2 &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2 \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right ) \cdot \left ( \int_{- \infty}^{+ \infty}{e^{-y^2}dy} \right ) \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-(x^2 + y^2)}dx} \right )
+    \end{align*}
+    \transparent{0}
+    \begin{center}
+    ¿Qué podemos hacer ahora?
+    \end{center}
+
+    \begin{center}
+    ¡Transformar a polares!
+    \end{center}
+    $$
+    \begin{cases}
+        x = r \cdot \cos{\theta} \\
+        y = r \cdot \sin{\theta}
+    \end{cases}
+    $$
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{center}
+    Sea $\mathcal{I} = \int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \end{center}
+    \begin{align*}
+        \mathcal{I}^2 &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2 \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right ) \cdot \left ( \int_{- \infty}^{+ \infty}{e^{-y^2}dy} \right ) \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-(x^2 + y^2)}dx} \right )
+    \end{align*}
+    \begin{center}
+    ¿Qué podemos hacer ahora?
+    \end{center}
+    \transparent{0}
+    \begin{center}
+    ¡Transformar a polares!
+    \end{center}
+    $$
+    \begin{cases}
+        x = r \cdot \cos{\theta} \\
+        y = r \cdot \sin{\theta}
+    \end{cases}
+    $$
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{center}
+    Sea $\mathcal{I} = \int_{- \infty}^{+ \infty}{e^{-x^2}dx}$
+    \end{center}
+    \begin{align*}
+        \mathcal{I}^2 &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2 \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right ) \cdot \left ( \int_{- \infty}^{+ \infty}{e^{-y^2}dy} \right ) \\
+        &= \left ( \int_{- \infty}^{+ \infty}{e^{-(x^2 + y^2)}dx} \right )
+    \end{align*}
+    \begin{center}
+    ¿Qué podemos hacer ahora?
+    \end{center}
+
+    \begin{center}
+    ¡Transformar a polares!
+    \end{center}
+    $$
+    \begin{cases}
+        x = r \cdot \cos{\theta} \\
+        y = r \cdot \sin{\theta}
+    \end{cases}
+    $$
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{align*}
+        \mathcal{I}^2 &= \int_{0}^{2 \pi}\int_0^{+ \infty} \begin{vmatrix} \frac{\partial x}{\partial r} && \frac{\partial x}{\partial \theta} \\ \frac{\partial y}{\partial r} && \frac{\partial y}{\partial \theta}\end{vmatrix} \cdot e^{-r^2} dr d\theta \\
+        &= \int_{0}^{2 \pi}\int_0^{+ \infty} \begin{vmatrix} \cos \theta && -r \sin \theta \\ \sin \theta && r \cos \theta \end{vmatrix} \cdot e^{-r^2} dr d\theta \\
+        &= \int_{0}^{2 \pi}\int_0^{+ \infty} r \cdot e^{-r^2} dr d\theta \\
+        &= -\frac{1}{2} \cdot \int_{0}^{2 \pi}\int_0^{+ \infty} r \cdot -2r \cdot e^{-r^2} dr d\theta \\
+        &= -\frac{1}{2} \cdot \int_{0}^{2 \pi} \left . e^{-r^2} \right |_{0}^{+ \infty} d\theta\\
+        &= -\frac{1}{2} \cdot \int_{0}^{2 \pi} - d\theta \\
+        &= \frac{1}{2} \cdot 2\pi \\
+        &= \pi \implies \boxed{\mathcal{I} = \sqrt{\pi}}
+    \end{align*}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ajustar tamaño de delimitadores}
+    \begin{center}
+    \begin{equation*}
+    \mathcal{I}^2 = \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2
+    \end{equation*}
+    \begin{verbatim}
+    \mathcal{I}^2 =
+    \left ( \int_{- \infty}^{+ \infty}
+    {e^{-x^2}dx} \right )^2
+    \end{verbatim}
+    \end{center}
+    \begin{itemize}
+        \item{\verb|\left| y \verb|\right| se usan para ajustar el tamaño de los delimitadores} 
+        \item{Podemos usar . si sólo necesitamos uno de los dos lados}
+        \item{Para los subíndices y superíndices usamos \_ y \^{}, respectivamente}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Alinear fórmulas respecto del símbolo =}
+
+\begin{align*}
+    \mathcal{I}^2 &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right )^2 \\
+    &= \left ( \int_{- \infty}^{+ \infty}{e^{-x^2}dx} \right ) \cdot \left ( \int_{- \infty}^{+ \infty}{e^{-y^2}dy} \right )
+\end{align*}
+
+\begin{verbatim}
+\begin{align*}
+    \mathcal{I}^2 &= \left ( \int {e^{-x^2}dx} \right )^2 \\
+    &= \left ( \int {e^{-x^2}dx} \right ) \cdot
+       \left ( \int{e^{-y^2}dy} \right )
+\begin{align}
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Símbolos varios}
+        \begin{align*}
+            \lim_{x\to x_{0}}f(x) = l :&\iff \Big[  \forall\epsilon>0, \exists\delta>0 \Big/ 0<\left|x-x_0\right|<\delta \\
+            &\implies \left|f(x)-l\right| <\epsilon \Big]
+        \end{align*}
+        \begin{itemize}
+            \item{Letras griegas (\textbackslash epsilon, \textbackslash delta...)}
+            \item{Operadores lógicos (\textbackslash land, \textbackslash lor...)}
+            \item{Implicaciones (\textbackslash implies, \textbackslash iff)}
+            \item{Cuantificador existencial y universal (\textbackslash forall \textbackslash exists)}
+            \item{Operadores de conjuntos (\textbackslash cup, \textbackslash cap, \textbackslash subset, \textbackslash in, \textbackslash notin...)}
+        \end{itemize}
+    \transparent{0}
+    \center{\textbf{\textcolor{red}{RETO}: ¿NOS ATREVEMOS A COPIAR LA DEFINICIÓN DE LÍMITE?}}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Símbolos varios}
+        \begin{align*}
+            \lim_{x\to x_{0}}f(x) = l :&\iff \Big[  \forall\epsilon>0, \exists\delta>0 \Big/ 0<\left|x-x_0\right|<\delta \\
+            &\implies \left|f(x)-l\right| <\epsilon \Big]
+        \end{align*}
+        \begin{itemize}
+            \item{Letras griegas (\textbackslash epsilon, \textbackslash delta...)}
+            \item{Operadores lógicos (\textbackslash land, \textbackslash lor...)}
+            \item{Implicaciones (\textbackslash implies, \textbackslash iff)}
+            \item{Cuantificador existencial y universal (\textbackslash forall \textbackslash exists)}
+            \item{Operadores de conjuntos (\textbackslash cup, \textbackslash cap, \textbackslash subset, \textbackslash in, \textbackslash notin...)}
+        \end{itemize}
+    \center{\textbf{\textcolor{red}{RETO}: ¿NOS ATREVEMOS A COPIAR LA DEFINICIÓN DE LÍMITE?}}
+\end{frame}
+
