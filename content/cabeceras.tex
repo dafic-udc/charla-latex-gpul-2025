@@ -2,9 +2,16 @@
 
 \begin{frame}[fragile]
 \frametitle{Cabeceras}
-En la cabecera podemos personalizar el lado izquierdo y el derecho por separado con el paquete \verb|fancyhdr|. Por ejemplo, poner un logo en el izquierdo y un texto en el derecho.
-\begin{itemize}
-    \item Lado izquierdo $\rightarrow$ \verb|\lhead{}|
-    \item Lado derecho $\rightarrow$ \verb|\rhead{}|
-\end{itemize}
+Podemos crear y personalizar cabeceras con el paquete \verb|fancyhdr|. Por ejemplo, poner un logo en el lado izquierdo y un texto en el lado derecho, o simplemente escribir un texto en el centro de la cabecera.
+\begin{enumerate}
+    \item Cargar el paquete \verb|fancyhdr| $\rightarrow$ \verb|\usepackage{fancyhdr}|
+    \item Definir el contenido de las cabeceras 
+    \begin{itemize}
+        \item Lado izquierdo $\rightarrow$ \verb|\fancyhead[L]|
+        \item Centro $\rightarrow$ \verb|\fancyhead[C]|
+        \item Lado derecho $\rightarrow$ \verb|\fancyhead[R]|
+    \end{itemize}
+    \item Aplicar el estilo con \verb|\pagestyle{fancy}|
+\end{enumerate}
+
 \end{frame}

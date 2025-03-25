@@ -1,6 +1,33 @@
 \section{Código}
 
 \begin{frame}[fragile]
-\frametitle{Código}
+\frametitle{Código: Código en línea y código en bloque}
+
+Código en línea:
+\begin{itemize}
+    \item \verb/\verb||/ (las \texttt{||} hacen de limitadores pero pueden ser cualquier otro caracter simepre que aparezca al principio y al final).
+    \item \verb|\texttt{}| (texto monoespaciado).
+\end{itemize}
+
+Ejemplo de \verb|print("Hello World!")| con  \verb/\verb||/.
+
+Ejemplo de \texttt{print("Hello World!")} con \verb|\texttt{}|.
+
+\vspace{0.5cm}
+
+Código en bloque:
+\begin{itemize}
+    \item Entorno \texttt{verbatim} (interpreta todo como código).
+
+    \item Entorno \texttt{lstlisting} del paquete \texttt{listings} (resalta código y es altamente personalizable).
+\end{itemize}
+
+\begin{verbatim}
+print("Hello World!") # Ejemplo con verbatim
+\end{verbatim}
+
+\begin{lstlisting}
+print("Hello World!") # Ejemplo con lstlisting
+\end{lstlisting}
 
 \end{frame}

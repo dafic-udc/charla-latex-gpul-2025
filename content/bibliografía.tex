@@ -1,1 +1,20 @@
 \section{Bibliografía}
+
+\begin{frame}[fragile]
+\frametitle{Bibliografía}
+
+\begin{enumerate}
+    \item Crear archivo \textit{.bib} (contiene las entradas bibliográficas)
+    \begin{itemize}
+        \item Cada entrada tiene un formato específico según el tipo de documento (libro, artículo, etc.) $\rightarrow$ Más información en \href{https://bibtex.eu/es/types/}{\textcolor{blue}{la página de BibTex}}.
+    \end{itemize}
+    \item Añadir las diferentes entradas
+    \begin{itemize}
+        \item Iniciamos la entrada especificando el tipo $\rightarrow$ \verb|@tipodeentrada| (\verb|@book|, \verb|@article|...)
+        \item Cada tipo de entrada tiene distintos campos. Por ejemplo, un \textit{article} tiene como obligatorios los campos \textit{author}, \textit{title}, \textit{journal} y \textit{year}.
+    \end{itemize}
+    \item En el archivo \textit{.tex}, cargamos el paquete \verb|\usepackage{biblatex}| y indicamos cuál es nuestro archivo \textit{.bib} a usar con \verb|\addbibresource{nombredelbib}|
+    \item Para citar una de esas entradas, se puede usar el comando \verb|\cite{nombredelaentrada}| donde corresponda
+    \item Para incluir la sección de bibliografía completa en nuestro documento, basta con usar el comando \verb|\printbibliography| en una nueva página
+\end{enumerate}
+\end{frame}

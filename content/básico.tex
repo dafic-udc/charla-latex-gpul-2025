@@ -23,7 +23,7 @@ Opción avanzada $\rightarrow$ \verb|\begin{titlepage}|
 
 % Section, subsection
 \begin{frame}[fragile]
-\frametitle{Comandos básicos: secciones e índice}
+\frametitle{Comandos básicos: secciones, índice y páginas}
 Crear secciones y subsecciones
 \begin{itemize}
     \item \verb|\section{}|
@@ -34,6 +34,10 @@ Crear secciones y subsecciones
 \vspace{0.5cm}
 
 Crear el índice (se actualiza automáticamente) $\rightarrow$ \verb|\tableofcontents|
+
+\vspace{0.5cm}
+
+Crear una nueva página  $\rightarrow$ \verb|\newpage|
 
 \end{frame}
 
@@ -54,6 +58,10 @@ Normalmente se hace justo después de definir el tipo de documento.
 \begin{itemize}
     \item \textbf{Negrita} $\rightarrow$ \verb|\textbf{Negrita}|
     \item \textit{Cursiva} $\rightarrow$ \verb|\textit{Cursiva}|
+    \begin{itemize}
+        \item [*] Otra forma de escribir cursiva es con el comando \verb|\emph{}| (`enfatizar' texto)
+        \item [*] La diferencia es que si se usa 2 veces \verb|\emph{}|, el texto vuelve a escribirse normal, pero si se usa 2 veces \verb|\textit{}| el texto se queda en cursiva
+    \end{itemize}
     \item \textcolor{red}{Colores} $\rightarrow$ \verb|\textcolor{red}{Colores}| (necesario el paquete \verb|\usepackage{xcolor}|)
 \end{itemize}
 
