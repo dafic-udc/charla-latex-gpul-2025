@@ -3,7 +3,6 @@
 <div align="center">
 
 [![LaTeX](https://img.shields.io/badge/latex-black?logo=latex&logoColor=white&labelColor=grey&color=%23008080)](<https://www.python.org/> "LaTeX")
-[![License](<https://img.shields.io/github/license/dafic-udc/charla-latex-gpul-2025>)](<LICENSE> "License")
 [![GitHub stars](https://img.shields.io/github/stars/dafic-udc/charla-latex-gpul-2025)](<https://github.com/dafic-udc/dafic-udc.github.io/stargazers> "Stars")
 
 </div>
